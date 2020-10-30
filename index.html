@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html>
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>This is the index page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit perferendis quae dolores impedit qui iusto veritatis, ea laboriosam reiciendis itaque pariatur! Ipsam voluptatem cumque alias fuga provident, praesentium beatae?</p>
-    
-</body>
+    <title>Cowboys Blog</title>
+    </head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial;
+}
+h1 {
+    background-color: rgb(0, 0, 128);
+    color: darkgray;
+    font: bold;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+.header {
+  text-align: center;
+  padding: 30px;
+}
+
+p {
+    font-style: italic;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+/* Default three columns */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Adjust to 1 column for mobile  */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <h1>Cowboys Superfan Blog</h1>
+  <p>The year was 2020...</p>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+    <img src="images/pic.jpg" style="width:100%">
+    <img src="images/star.jpg" style="width:100%">
+    <img src="images/helmet.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
 </html>
